@@ -40,7 +40,11 @@ const initialUsersList = [
 ];
 
 function App() {
-  return <h1>Write your code</h1>;
+  return (
+    <div>
+      <h1>write your code</h1>
+    </div>
+  );
 }
 
 export default App;
