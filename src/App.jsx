@@ -1,6 +1,4 @@
-import { useState } from "react";
 import "./App.css";
-import Users from "./components/Users";
 
 const initialUsersList = [
   {
@@ -42,45 +40,7 @@ const initialUsersList = [
 ];
 
 function App() {
-  const [search, setSearch] = useState("");
-  const [userList, setUserList] = useState(initialUsersList);
-
-  const handleSearch = (event) => {
-    setSearch(event.target.value.toLowerCase());
-  };
-
-  const searchResults = userList.filter((item) =>
-    item.name.toLowerCase().includes(search)
-  );
-
-  const handleRemoveUser = (id) => {
-    const filterData = userList.filter((item) => item.id !== id);
-    setUserList(filterData);
-  };
-
-  return (
-    <div className="main-container">
-      <div className="instagram-card">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png"
-          alt="instagram-icon"
-          className="instagram-icon"
-        />
-        <h1>Instagram Search</h1>
-
-        <input
-          type="search"
-          placeholder="search friends"
-          value={search}
-          onChange={handleSearch}
-        />
-
-        {searchResults.map((item) => (
-          <Users usersList={item} handleRemoveUser={handleRemoveUser} />
-        ))}
-      </div>
-    </div>
-  );
+  return <h1>Write your code</h1>;
 }
 
 export default App;

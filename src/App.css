@@ -4,3 +4,31 @@
   margin: 0;
   font-family: Roboto;
 }
+
+.main-container {
+  background: linear-gradient(
+    to right,
+    #feda75,
+    #fa7e1e,
+    #d62976,
+    #962fbf,
+    #4f5bd5
+  );
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.instagram-card {
+  width: 400px;
+  background-color: #fff;
+  height: 500px;
+  text-align: center;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.instagram-icon {
+  height: 45px;
+}
